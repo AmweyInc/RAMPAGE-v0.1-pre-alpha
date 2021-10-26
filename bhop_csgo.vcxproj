@@ -141,6 +141,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="clantag.cpp" />
     <ClCompile Include="fov_changer.cpp" />
     <ClCompile Include="noflash.cpp" />
     <ClCompile Include="radar.cpp" />
@@ -151,6 +152,7 @@
     <ClCompile Include="wallhack.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="clantag.h" />
     <ClInclude Include="fov_changer.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="mem.h" />

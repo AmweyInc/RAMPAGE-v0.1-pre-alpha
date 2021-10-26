@@ -25,21 +25,21 @@ WALL::WALL(Mem mem, uintptr_t clientBase,uintptr_t engine) {
 
 		if (team != myTeam)
 		{
-			mem.Write<float>(glowObj + currentGlowIndex * 0x38 + 0x4, 255); // red
-			mem.Write<float>(glowObj + currentGlowIndex * 0x38 + 0x8, 0); // green
-			mem.Write<float>(glowObj + currentGlowIndex * 0x38 + 0xC, 0); // blue
-			mem.Write<float>(glowObj + currentGlowIndex * 0x38 + 0x10, 255);
-			mem.Write<bool>(glowObj + currentGlowIndex * 0x38 + 0x24, true);
-			mem.Write<bool>(glowObj + currentGlowIndex * 0x38 + 0x25, false);
+			mem.Write<float>(glowObj + currentGlowIndex * 0x38 + 0x8, 255); // red
+			mem.Write<float>(glowObj + currentGlowIndex * 0x38 + 0xC, 0); // green
+			mem.Write<float>(glowObj + currentGlowIndex * 0x38 + 0x10, 0); // blue
+			mem.Write<float>(glowObj + currentGlowIndex * 0x38 + 0x14, 255);
+			mem.Write<bool>(glowObj + currentGlowIndex * 0x38 + 0x28, true);
+			mem.Write<bool>(glowObj + currentGlowIndex * 0x38 + 0x29, false);
 		}
 		else
 		{
-			mem.Write<float>(glowObj + currentGlowIndex * 0x38 + 0x4, 0); // red
-			mem.Write<float>(glowObj + currentGlowIndex * 0x38 + 0x8, 0); // green
-			mem.Write<float>(glowObj + currentGlowIndex * 0x38 + 0xC, 255); // blue
-			mem.Write<float>(glowObj + currentGlowIndex * 0x38 + 0x10, 255);
-			mem.Write<bool>(glowObj + currentGlowIndex * 0x38 + 0x24, true);
-			mem.Write<bool>(glowObj + currentGlowIndex * 0x38 + 0x25, false);
+			mem.Write<float>(glowObj + currentGlowIndex * 0x38 + 0x8, 0); // red
+			mem.Write<float>(glowObj + currentGlowIndex * 0x38 + 0xC, 0); // green
+			mem.Write<float>(glowObj + currentGlowIndex * 0x38 + 0x10, 255); // blue
+			mem.Write<float>(glowObj + currentGlowIndex * 0x38 + 0x14, 255);
+			mem.Write<bool>(glowObj + currentGlowIndex * 0x38 + 0x28, true);
+			mem.Write<bool>(glowObj + currentGlowIndex * 0x38 + 0x29, false);
 		}
 	}
 }

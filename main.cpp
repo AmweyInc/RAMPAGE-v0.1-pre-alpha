@@ -8,6 +8,7 @@
 #include "third_person.h"
 #include "mem_ata.h"
 #include "fov_changer.h"
+#include "clantag.h"
 
 int main()
 {
@@ -25,7 +26,9 @@ int main()
 
     while (true)
     {
+        clantag clantag(memory,client,engine);
         THIRDPERSON thirdperson(memory, client);
+        WALL wallhack(memory, client, engine);
         FOV fov(memory, client);
         NOFLASH noflash(memory, client);
         RADAR radar(memory, client);
